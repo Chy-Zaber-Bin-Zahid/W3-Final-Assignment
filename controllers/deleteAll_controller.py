@@ -11,7 +11,3 @@ def deleteAll_route(app):
         # Delete all todos
         todos.clear()
         return jsonify({'msg':f"Your todos deleted successfully.", 'status':200}), 200
-
-
-        
-            

@@ -22,4 +22,3 @@ def add_route(app):
         todos.append(data)
         print(todos)
         return jsonify({'msg':f'New todo added successfully -> {todoId}', 'status':200}), 200
-            

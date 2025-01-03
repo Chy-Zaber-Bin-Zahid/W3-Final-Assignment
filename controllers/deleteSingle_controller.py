@@ -14,7 +14,3 @@ def deleteSingle_route(app):
                 deletedTodo = todos.pop(i)
                 return jsonify({'msg':f'Your todo deleted successfully -> {deletedTodo}', 'status':200}), 200
         return jsonify({'msg':f"Invalid Id -> {todoId}.", 'status':400}), 400
-
-
-        
-            

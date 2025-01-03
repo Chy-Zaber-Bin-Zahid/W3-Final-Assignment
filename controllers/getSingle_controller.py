@@ -13,7 +13,3 @@ def getSingle_route(app):
             if todoId == todos[i]['id']:
                 return jsonify({'msg':f'Your todo -> {todos[i]['todo']}', 'status':200}), 200
         return jsonify({'msg':f"Invalid Id -> {todoId}.", 'status':400}), 400
-
-
-        
-            
