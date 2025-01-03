@@ -1,0 +1,145 @@
+{
+	"info": {
+		"_postman_id": "83893749-b27c-4e77-85fa-6b96dac5261a",
+		"name": "W3 Flask Final",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26636758"
+	},
+	"item": [
+		{
+			"name": "post todo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"todo\" : \"Go to gym\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/add-todo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"add-todo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get single todo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/get-todo/49d1fb9837cf4c2f81ab476c4ff420fbs",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"get-todo",
+						"49d1fb9837cf4c2f81ab476c4ff420fbs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all todo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/get-todo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"get-todo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete single todo",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/delete-todo/10f6742c06f64b939b1ea20a0f3e9352",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"delete-todo",
+						"10f6742c06f64b939b1ea20a0f3e9352"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete all todo",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/delete-todo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"delete-todo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "edit todo",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"todo\": \"sadas\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/edit-todo/90b62c9203684117a42838e29dcbbe1f",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"edit-todo",
+						"90b62c9203684117a42838e29dcbbe1f"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
